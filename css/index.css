@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-transform: capitalize;
+    font-family: "Inter Tight", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+/* common class */
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-heading {
+    font-size: 30px;
+}
+
+.cmn-btn {
+    color: black;
+    background-color: white;
+    padding: 14px 25px;
+    border-radius: 50px;
+}
+
+.cmn-btn:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+/* navbar */
+.navbar {
+    background-color: #000000;
+}
+
+.navbar-brand {
+    max-width: 190px;
+    width: 100%;
+}
+.navbar-toggler-icon{
+    border: 1px solid white;
+    background-color: white;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+/* banner */
+.banner {
+    background-image: url("../image/Banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+.banner-content {
+    color: white;
+    max-width: 442px;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.banner-content h1 {
+    margin-bottom: 30px;
+    font-family: "Inter Tight", sans-serif;
+}
+
+/* project */
+.project-content h2 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-size: 40px;
+    position: relative;
+}
+
+/* .project-content h2::after {
+    content: " ";
+    position: absolute;
+    border: 1px solid rgb(177, 177, 177);
+    width: 75%;
+    bottom: 15px;
+    margin-left: 10px;
+} */
+
+.project-card {
+    position: relative;
+}
+
+.project-name {
+    background-color: white;
+    color: black;
+    position: absolute;
+    padding: 8px 20px;
+    top: 10px;
+    left: 10px;
+}
+
+.view-btn {
+    padding: 10px 20px;
+    color: white;
+    background-color: #000000;
+    border-radius: 50px;
+}
+
+.view-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #000000;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* about */
+.about {
+    background-color: #000000;
+}
+
+.logo {
+    max-width: 150px;
+    width: 100%;
+}
+
+.about-content {
+    color: white;
+}
+
+.about-content p {
+    margin-top: 10px;
+}
+
+.about-content h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    font-size: 15px;
+    max-width: 624px;
+    width: 100%;
+}
+
+.bottom-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 20px;
+}
+
+.numbers {
+    font-size: 40px;
+}
+
+.about-btn {
+    margin-top: 50px;
+}
+
+/* sectors */
+.Sectors-content h2 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.card {
+    border: none;
+    position: relative;
+}
+
+.read-btn {
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.read-btn:hover {
+    background-color: white;
+    color: #000000;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+
+.card-bottom p {
+    font-size: 18px;
+    color: white;
+}
+
+/* deliver */
+.deliver {
+    background-color: #000000;
+    color: white;
+}
+
+.deliver-upper {
+    margin-bottom: 100px;
+}
+
+.deliver-upper h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 10px;
+}
+
+/* clients */
+.section-heading {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.style-client {
+    background-color: #EFEFEF;
+}
+/* news */
+.news-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.news-content h2 {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.date {
+    color: gray;
+}
+
+.card-body h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card-body span {
+    color: gray;
+}
+
+.btn-read {
+    color: black;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+
+.btn-read:hover {
+    transform: translateX(10px);
+}
+
+/* footer */
+footer {
+    background-color: #000000;
+    color: white;
+}
+
+.footer-link li a {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-link li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.footer-link li a i {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.footer-heading {
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width:767px) {
+    .project-content h2::after {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .banner-content {
+        font-size: 20px;
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .project-content h2::after {
+        width: 30%;
+    }
+
+    .project-content h2 {
+        font-size: 30px;
+    }
+
+    .numbers {
+        font-size: 30px;
+    }
+
+    .Sectors-content h2 {
+        font-size: 30px;
+    }
+
+    .news-content {
+        flex-direction: column;
+    }
+    .copy{
+        text-align: start;
+    }
+}
+
+@media screen and (max-width:417px) {
+    .project-content h2::after {
+        width: 20%;
+    }
+    .news-content h2{
+        font-size: 25px;
+    }
+
+}
