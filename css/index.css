@@ -100,15 +100,6 @@ li {
     position: relative;
 }
 
-/* .project-content h2::after {
-    content: " ";
-    position: absolute;
-    border: 1px solid rgb(177, 177, 177);
-    width: 75%;
-    bottom: 15px;
-    margin-left: 10px;
-} */
-
 .project-card {
     position: relative;
 }
@@ -175,10 +166,13 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
 }
 
 .about-title {
     font-size: 20px;
+    
 }
 
 .numbers {
@@ -218,7 +212,8 @@ li {
     justify-content: space-between;
     position: absolute;
     bottom: 25px;
-    left: 15px;
+    width: 100%;
+    padding: 10px;
 }
 
 .card-bottom p {
@@ -334,11 +329,7 @@ footer {
 }
 
 
-@media screen and (max-width:767px) {
-    .project-content h2::after {
-        width: 40%;
-    }
-}
+
 
 @media screen and (max-width:575px) {
     .banner-content {
@@ -349,10 +340,6 @@ footer {
 
     .about-content h2 {
         font-size: 30px;
-    }
-
-    .project-content h2::after {
-        width: 30%;
     }
 
     .project-content h2 {
@@ -376,9 +363,6 @@ footer {
 }
 
 @media screen and (max-width:417px) {
-    .project-content h2::after {
-        width: 20%;
-    }
     .news-content h2{
         font-size: 25px;
     }
